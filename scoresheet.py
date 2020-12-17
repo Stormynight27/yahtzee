@@ -17,10 +17,12 @@ class ScoreSheet:
                     if repeat == 2:
                         return sum(hand) + 25
 
-    def _score_l_straight(self, hand):
+       def _score_l_straight(self, hand):
+        large_straight = []
         for worth, count, in hand._sets.items():
             if count == 1:
-                if hand.sixes == [] or hand.ones == []:
+                large_straight.append(worth)
+                if large_straight == [1, 2, 3, 4, 5] or large_straight == [2, 3, 4, 5, 6]:
                     return 40
 
     def _score_s_straight(self, hand):
