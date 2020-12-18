@@ -6,7 +6,7 @@ class Player:
 
     def __init__(self, name):
         self.name = name
-        self.game()
+        
 
     x = 13
     points = []
@@ -71,3 +71,4 @@ class Player:
 
 
 player = Player("player1")
+player.game()
