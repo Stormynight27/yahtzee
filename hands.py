@@ -32,7 +32,8 @@ class Hand(list):
 
         if roll.lower() == 'score':
             from player import Player
-            return Player.score_remaining(Player)
+            print Player.score_remaining(Player)
+            return self
             
 
         for _ in roll:
