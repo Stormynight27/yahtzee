@@ -32,8 +32,8 @@ class Hand(list):
 
         if roll.lower() == 'score':
             from player import Player
-            print(Player.score_remaining(Player))
-            return self._reroll_dice()
+            return Player.score_remaining(Player)
+            
 
         for _ in roll:
             if _ not in str(self):
