@@ -70,4 +70,4 @@ class Player:
             print(key)
 
 
-player = Player(input("what's your name?")
+player = Player(input("what's your name?"))
