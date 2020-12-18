@@ -43,7 +43,7 @@ class Player:
             if score == 'stop':
                 break
 
-            if len(score) <= 6:
+            if score in self.dictionary and len(score) <= 6:
                 self.lower.append(self.dictionary[score](hand))
 
             if score in self.dictionary:
