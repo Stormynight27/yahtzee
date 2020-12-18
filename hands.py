@@ -19,7 +19,7 @@ class Hand(list):
         return dice
 
     def _reroll_dice(self):
-        from player import Player
+        
         print(f"\n{self}\nAre the dice you have rolled, you may still reroll them, type 'score' to see your remaining "
               f"scores \n")
 
@@ -31,6 +31,7 @@ class Hand(list):
         roll = "".join(roll)
 
         if roll.lower() == 'score':
+            from player import Player
             print(Player.score_remaining(Player))
             return self._reroll_dice()
 
